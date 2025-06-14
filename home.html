@@ -1,14 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome Home</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shan的像素小屋</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="home-container">
-    <h1>Hello, Shan 🖤</h1>
-    <p>You’ve entered the secret garden.</p>
-  </div>
+  <!-- 导航栏 -->
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="黑豹Logo" width="50" height="50" />
+      <span>黑豹Logo</span>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="home.html">🏠 Home</a></li>
+      <li><a href="notes.html">✍️ Shan随笔</a></li>
+      <li><a href="shan-sam.html">📸 Shan&Sam</a></li>
+      <li><a href="music.html">🎵 音乐盒子</a></li>
+      <li><a href="dream.html">🧙‍♀️ 梦境探索</a></li>
+      <li><a href="about.html">🧾 关于小屋</a></li>
+    </ul>
+  </nav>
+
+  <!-- 主页内容 -->
+  <main>
+    <h1>欢迎来到 Shan 的像素小屋</h1>
+    <p>有兔子、纸牌、大树、小丑和藏着你的梦。</p>
+
+    <section class="notes-preview">
+      <h2>Shan的随笔本</h2>
+      <button>保存</button>
+    </section>
+
+    <section class="music-box">
+      <h2>🎵 Sam的音乐盒</h2>
+      <audio controls>
+        <source src="rnb-song.mp3" type="audio/mpeg" />
+        您的浏览器不支持 audio 标签。
+      </audio>
+      <p>播放中：Sam为Shan挑选的抒情R&B</p>
+    </section>
+  </main>
+  
+  <script src="script.js"></script>
 </body>
 </html>
